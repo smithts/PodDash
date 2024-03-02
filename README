@@ -1,1 +1,11 @@
+"PodDash: Escape from Alienation" was created in the Winter of 2022 in collaboration with one other classmate in our Augmented and Virtual Reality Master's Course. 
 
+My responsibilities focused primarily on establishing the game logic using C# scripts in Unity. We utilized many premade models for the visuals of the game, which we purchased from the Asset Store.
+
+This repository does not reflect a functioning copy of the code base, but rather is meant to emphasize my contribution to the project. Main source script files can be found in the Assets/Scripts folder.
+
+PodDash was originally created to run on the Meta Quest 2 Headset
+
+Here is the "Trailer" for PodDash: Escape from Alienation: https://drive.google.com/file/d/1rVIVhxHKptBLuBYK67NbFCaX31uUGnCn/view?usp=drive_link
+
+Functioning APK available upon request.
