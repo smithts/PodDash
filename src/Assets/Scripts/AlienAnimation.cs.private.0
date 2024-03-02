@@ -1,0 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AlienAnimation : MonoBehaviour
+{
+
+
+	private Animator anim;
+	private CharacterController controller;
+	//public AudioClip Sound;
+	public int battle_state = 0;
+	public float speed = 6.0f;
+	public float runSpeed = 3.0f;
+	public float turnSpeed = 60.0f;
+	public float gravity = 20.0f;
+	private Vector3 moveDirection = Vector3.zero;
+	private float w_sp = 0.0f;
+	private float r_sp = 0.0f;
+
+	//void Start()
+	//{
+	//	anim = GetComponent<Animator>();
+	//	controller = GetComponent<CharacterController>();
+	//	w_sp = speed; //read walk speed
+	//	r_sp = runSpeed; //read run speed
+	//	battle_state = 0;
+	//	runSpeed = 1;
+	//	anim.SetInteger("moving", 1);
+
+	//}
+
+	void OnTriggerEnter()
+	{
+		//gameObject.GetComponent<AudioSource>().PlayOneShot(Sound);
+		anim = GetComponent<Animator>();
+		controller = GetComponent<CharacterController>();
+		anim.SetInteger("battle", 1);
+		battle_state = 1;
+		runSpeed = r_sp;
+		anim.SetInteger("moving", 7);
+
+	}
+}
